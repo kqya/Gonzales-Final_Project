@@ -6,13 +6,12 @@ export default function App() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <div className="bg-black text-white font-fira min-h-screen relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-0 left-0 w-6 h-6 bg-pink-500 opacity-20 rounded-sm animate-pulse" />
+    <div className="bg-black text-white font-fira min-h-screen relative overflow-visible">
+     
+      <div className="absolute top-25 left-10 w-6 h-6 bg-pink-200 opacity-20 rounded-sm animate-pulse" />
       <div className="absolute bottom-10 right-10 w-3 h-3 bg-white rounded-full opacity-30" />
       <div className="absolute top-1/2 left-1/3 w-10 h-10 border-2 border-pink-300 rotate-12 opacity-10" />
 
-      {/* MORE CUTE BITS */}
       <div className="absolute top-1/4 right-10 w-2 h-2 bg-pink-400 rounded-full opacity-40 animate-bounce" />
       <div className="absolute bottom-1/4 left-5 w-4 h-4 bg-white opacity-20 rounded-sm rotate-6" />
       <div className="absolute bottom-10 left-1/2 w-8 h-8 border border-white opacity-10 rotate-45 animate-[float_6s_ease-in-out_infinite]" />
@@ -21,7 +20,6 @@ export default function App() {
       <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-white rounded-full opacity-20" />
       <div className="absolute bottom-[8%] left-[15%] w-6 h-6 border border-pink-500 opacity-10 rotate-12" />
 
-      {/* Floating animation keyframe */}
       <style>
         {`
           @keyframes float {
@@ -32,7 +30,6 @@ export default function App() {
         `}
       </style>
 
-      {/* Smooth Scrolling Style */}
       <style>
         {`
           html {
@@ -41,8 +38,8 @@ export default function App() {
         `}
       </style>
 
-      <header className="flex justify-between items-center p-8">
-        <span className="font-bold text-lg">kyra daphne</span>
+      <header className="flex justify-between items-center p-8 sticky top-0 z-50 bg-grey bg-opacity-80 backdrop-blur">
+        <span className="font-bold text-lg">kyra-g</span>
         <nav className="space-x-6 text-sm">
           <a href="#home" className="hover:underline">#home</a>
           <a href="#works" className="hover:underline">#works</a>
