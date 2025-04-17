@@ -17,11 +17,16 @@
 
 a {
   font-weight: 500;
-  color: #f9dcfc;
-  text-decoration: inherit;
+  background: linear-gradient(to bottom, #ffb8fb, #afffda); /* pink-200 and lime-200 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 a:hover {
-  color: #c79dee;
+  background: linear-gradient(to bottom, #ea47ff, #53ff8c); /* pink-200 and lime-200 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 body {
@@ -38,23 +43,50 @@ h1 {
   line-height: 1.1;
 }
 
+h2 {
+  text-align: left;
+}
+
+.text-pink-lime-gradient {
+  background: linear-gradient(to bottom, #ffb4fb, #c0ffb4); /* pink-200 and lime-200 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hover-gradient-text {
+  font-weight: bold; /* Keep it bold */
+  -webkit-font-smoothing: antialiased; /* Improve text rendering */
+  text-rendering: optimizeLegibility; /* Improve legibility */
+}
+
+.hover-gradient-text:hover {
+  background: linear-gradient(to right, #fbcfe8, #a7f3d0); /* pink-200 to lime-200 */
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold; /* Ensure bold stays on hover */
+  -webkit-font-smoothing: antialiased; /* Ensure smoothing on hover */
+  text-rendering: optimizeLegibility; /* Improve legibility on hover */
+}
+
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid #636363;
   padding: 0.6em 1.2em;
   font-size: 1em;
-  font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #000000;
   cursor: pointer;
   transition: border-color 0.25s;
+  outline: none;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #ffffff;
 }
 button:focus,
 button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 1px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {
