@@ -57,7 +57,7 @@ export default function App() {
         </nav>
         <button
           onClick={() => setShowModal(true)}
-          className="mt-8 border border-white px-6 py-3 text-sm hover:bg-white transition hover-gradient-text"
+          className="font-bold mt-8 border border-white px-6 py-3 text-sm bg-transparent text-white transition hover:text-transparent hover:font-bold hover:bg-gradient-to-r hover:from-pink-200 hover:to-lime-200 hover:bg-clip-text hover:[-webkit-background-clip:text]"
         >
           contact me &gt;&gt;
         </button>
@@ -83,7 +83,7 @@ export default function App() {
               <p className="text-xs text-gray-400">{proj.tech}</p>
               <h3 className="font-bold text-xl mt-4">{proj.title}</h3>
               <p className="text-sm mt-2">{proj.desc}</p>
-              <button className="mt-4 text-white border border-[#636363] hover:bg-white transition hover-gradient-text px-6 py-3">Live ⇔</button>
+              <button className="font-bold mt-8 border border-white px-6 py-3 text-sm bg-transparent text-white transition hover:text-transparent hover:font-bold hover:bg-gradient-to-r hover:from-pink-200 hover:to-lime-200 hover:bg-clip-text hover:[-webkit-background-clip:text]">Live ⇔</button>
             </div>
           ))}
         </div>
@@ -120,7 +120,7 @@ export default function App() {
         <p className="text-sm leading-relaxed text-left">
           hello, i’m ky!<br />i’m an aspiring web developer and sap erp specialist;<br />currently in my second year of studying BSIT & specializing in erp.
         </p>
-        <button className="mt-4 border px-4 py-2 text-xs hover:bg-white transition hover-gradient-text">Read more →</button>
+        <button className="font-bold mt-8 border border-white px-6 py-3 text-sm bg-transparent text-white transition hover:text-transparent hover:font-bold hover:bg-gradient-to-r hover:from-pink-200 hover:to-lime-200 hover:bg-clip-text hover:[-webkit-background-clip:text]">Read more →</button>
       </section>
 
       <section className="p-16" id="contacts">
@@ -162,7 +162,7 @@ export default function App() {
             <div className="flex justify-end">
               <button
                 type="submit"
-                className="bg-black text-white px-4 py-2 hover:bg-white transition hover-gradient-text"
+                className="font-bold mt-8 border border-white px-6 py-3 text-sm bg-transparent text-white transition hover:text-transparent hover:font-bold hover:bg-gradient-to-r hover:from-pink-200 hover:to-lime-200 hover:bg-clip-text hover:[-webkit-background-clip:text]"
                 style={{
                   backgroundColor: 'transparent',
                   border: 'none',

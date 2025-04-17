@@ -55,10 +55,14 @@ h2 {
 }
 
 .hover-gradient-text {
-  font-weight: bold; /* Keep it bold */
-  -webkit-font-smoothing: antialiased; /* Improve text rendering */
-  text-rendering: optimizeLegibility; /* Improve legibility */
+  background: linear-gradient(to right, #fbcfe8, #a7f3d0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  transition: all 0.3s ease;
 }
+
 
 .hover-gradient-text:hover {
   background: linear-gradient(to right, #fbcfe8, #a7f3d0); /* pink-200 to lime-200 */
